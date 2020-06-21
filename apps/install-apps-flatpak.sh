@@ -9,6 +9,7 @@ declare -a progs_flatpak=("peek" # Peek (https://github.com/phw/peek)
                           "org.gimp.GIMP" # GIMP (https://www.gimp.org/)
                           "com.github.maoschanz.drawing"
                           "io.github.celluloid_player.Celluloid"  # https://flathub.org/apps/details/io.github.celluloid_player.Celluloid
+                          "com.github.alainm23.planner" # https://planner-todo.web.app/
                           )
 
 echo "-----------------------------------------------------------------------------------------"
