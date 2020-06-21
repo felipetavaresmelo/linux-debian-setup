@@ -14,6 +14,8 @@ declare -a apps=("python3"
                 "curl"
                 "xclip"
                 "solaar" # https://pwr-solaar.github.io/Solaar/
+                "lsb -y" # http://download.ebz.epson.net/dsc/du/02/DriverDownloadInfo.do?LG2=EN&CN2=&DSCMI=111235&DSCCHK=fb74fba5064100c62ec5321e3b763b68223dc521
+
                 )
 
 echo "------------------------------------------------------------" | tee -a $log
