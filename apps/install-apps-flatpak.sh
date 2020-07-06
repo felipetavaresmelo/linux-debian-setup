@@ -5,7 +5,6 @@ log=$2
 declare -a progs_flatpak=("peek" # Peek (https://github.com/phw/peek)
                           "com.obsproject.Studio" # https://github.com/flathub/com.obsproject.Studio
                           "org.gnucash.GnuCash" # https://gnucash.org | https://github.com/flathub/org.gnucash.GnuCash
-                          "org.gnome.Boxes" # https://github.com/flathub/org.gnome.Boxes
                           "org.gimp.GIMP" # GIMP (https://www.gimp.org/)
                           "com.github.maoschanz.drawing"
                           "io.github.celluloid_player.Celluloid"  # https://flathub.org/apps/details/io.github.celluloid_player.Celluloid
