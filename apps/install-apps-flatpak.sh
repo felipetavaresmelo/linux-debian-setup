@@ -10,6 +10,7 @@ declare -a progs_flatpak=("peek" # Peek (https://github.com/phw/peek)
                           "io.github.celluloid_player.Celluloid"  # https://flathub.org/apps/details/io.github.celluloid_player.Celluloid
                           "io.dbeaver.DBeaverCommunity" # https://flathub.org/apps/details/io.dbeaver.DBeaverCommunity
                           "com.valvesoftware.Steam" # https://store.steampowered.com | https://github.com/flathub/com.valvesoftware.Steam
+                          "com.jetbrains.IntelliJ-IDEA-Community" # https://www.jetbrains.com/idea/download/#section=linux  |  https://flathub.org/apps/details/com.jetbrains.IntelliJ-IDEA-Community
                           )
 
 echo "-----------------------------------------------------------------------------------------"
