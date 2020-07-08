@@ -2,7 +2,8 @@
 pass=$1
 log=$2
 
-declare -a apps=("python3" 
+declare -a apps=("openjdk-8-jre-headless -y"
+                "python3" 
                 "python3-pip"
                 "ruby-full build-essential zlib1g-dev" 
                 "synaptic" 
@@ -64,6 +65,11 @@ sudo add-apt-repository ppa:solaar-unifying/stable
 # https://launchpad.net/~mc3man/+archive/ubuntu/mpv-tests
 # https://mpv.io/
 sudo add-apt-repository ppa:mc3man/mpv-tests
+
+# Vivaldi
+wget -qO- https://repo.vivaldi.com/archive/linux_signing_key.pub | sudo apt-key add -
+sudo add-apt-repository 'deb https://repo.vivaldi.com/archive/deb/ stable main' 
+sudo apt update && sudo apt install vivaldi-stable
 
 # instalações APT
 sudo apt-get update | tee -a $log
