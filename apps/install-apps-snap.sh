@@ -1,22 +1,10 @@
 #!/bin/bash
 pass=$1
 log=$2
-declare -a apps_snap=("dbeaver-ce" 
-                      "spotify" 
-                      "skype --classic" 
-                      "chromium"  # Chromium (https://www.chromium.org/)
-                      "code --classic" # VSCODE (https://github.com/Microsoft/vscode)
-                      "whatsdesk" 
-                      "telegram-desktop" # Telegram (https://desktop.telegram.org/)
-                      "slack --classic" 
-                      "discord" 
-                      "inkscape" # Inkscape (https://wiki.inkscape.org/wiki/index.php/Installing_Inkscape)
+declare -a apps_snap=(
                       "freemind" 
-                      "filezilla --edge" 
                       "postgresql10" 
-                      "insomnia" 
-                      "vlc" 
-                      "gydl")
+                      )
 echo "------------------------------------------------------------" | tee -a $log
 echo "> SNAP List"
 echo "$(date '+%Y/%m/%d-%H:%M:%S:%N') -- INFO -- snap list" >> $log
@@ -46,5 +34,4 @@ echo "------------------------------------------------------------" | tee -a $lo
 
 # uninstall 
 
-# sudo snap remove telegram-desktop
-# sudo snap remove slack
+# sudo snap remove freemind

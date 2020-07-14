@@ -2,10 +2,10 @@
 pass=$1
 log=$2
 
-declare -a apps=("openjdk-8-jre-headless -y" 
-                "python3" 
-                "python3-pip" 
-                "ruby-full" 
+declare -a apps=("openjdk-8-jre-headless -y" # Compilador Java
+                "python3" # Interpretador Python
+                "python3-pip" # Python Package Index https://pypi.org/
+                "ruby-full" # Linguagem Ruby  https://www.ruby-lang.org/pt/documentation/installation/#apt
                 "build-essential" # essencial para a construção de pacotes Debian https://packages.debian.org/pt-br/sid/build-essential
                 "zlib1g-dev" # lossless data-compression library http://zlib.net/  https://packages.ubuntu.com/focal/zlib1g-dev
                 "synaptic" # gerenciamento de pacotes APT em GTK+ https://www.nongnu.org/synaptic/
@@ -46,17 +46,20 @@ echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" 
 wget -qO - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
 echo "$(date '+%Y/%m/%d-%H:%M:%S:%N') -- INFO -- APT -- repositório Postgres listado." | tee -a $log
 
-# Repositório Vivaldi
+# Vivaldi
 echo "deb https://repo.vivaldi.com/archive/deb/ stable main" | sudo tee /etc/apt/sources.list.d/vivaldi.list
 wget -qO- https://repo.vivaldi.com/archive/linux_signing_key.pub | sudo apt-key add -
 echo "$(date '+%Y/%m/%d-%H:%M:%S:%N') -- INFO -- APT -- repositório Vivaldi listado." | tee -a $log
 
-
-# solaar (https://launchpad.net/~solaar-unifying/+archive/ubuntu/stable  |  https://pwr-solaar.github.io/Solaar/
+# Solaar unifying (Logitech) (https://launchpad.net/~solaar-unifying/+archive/ubuntu/stable  |  https://pwr-solaar.github.io/Solaar/
 echo "deb http://ppa.launchpad.net/solaar-unifying/stable/ubuntu focal main" | sudo tee /etc/apt/sources.list.d/solaar-unifying.list
 echo "$(date '+%Y/%m/%d-%H:%M:%S:%N') -- INFO -- APT -- repositório Unifying listado." | tee -a $log
 
-# instalações APT
+echo "deb http://ppa.launchpad.net/solaar-unifying/stable/ubuntu focal main" | sudo tee /etc/apt/sources.list.d/solaar-unifying.list
+echo "$(date '+%Y/%m/%d-%H:%M:%S:%N') -- INFO -- APT -- repositório Unifying listado." | tee -a $log
+
+
+# Instalações APT
 sudo apt-get update | tee -a $log
 sudo apt-get dist-upgrade -y | tee -a $log
 for app in "${apps[@]}"

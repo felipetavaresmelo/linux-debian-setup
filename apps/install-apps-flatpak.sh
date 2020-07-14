@@ -2,15 +2,27 @@
 pass=$1
 log=$2
 
-declare -a progs_flatpak=("peek" # Peek (https://github.com/phw/peek)
-                          "com.obsproject.Studio" # https://github.com/flathub/com.obsproject.Studio
-                          "org.gnucash.GnuCash" # https://gnucash.org | https://github.com/flathub/org.gnucash.GnuCash
-                          "org.gimp.GIMP" # GIMP (https://www.gimp.org/)
-                          "com.github.maoschanz.drawing"
-                          "io.github.celluloid_player.Celluloid"  # https://flathub.org/apps/details/io.github.celluloid_player.Celluloid
-                          "io.dbeaver.DBeaverCommunity" # https://flathub.org/apps/details/io.dbeaver.DBeaverCommunity
-                          "com.valvesoftware.Steam" # https://store.steampowered.com | https://github.com/flathub/com.valvesoftware.Steam
-                          "com.jetbrains.IntelliJ-IDEA-Community" # https://www.jetbrains.com/idea/download/#section=linux  |  https://flathub.org/apps/details/com.jetbrains.IntelliJ-IDEA-Community
+declare -a progs_flatpak=("com.uploadedlobster.peek" # Peek: (https://flathub.org/apps/details/com.uploadedlobster.peek)
+                          "com.obsproject.Studio" # OBS Studio: https://flathub.org/apps/details/com.obsproject.Studio
+                          "org.gnucash.GnuCash" # GnuCash: https://flathub.org/apps/details/org.gnucash.GnuCash
+                          "org.gimp.GIMP" # GIMP: https://flathub.org/apps/details/org.gimp.GIMP
+                          "com.github.maoschanz.drawing" # https://flathub.org/apps/details/com.github.maoschanz.drawing
+                          "io.github.celluloid_player.Celluloid"  # Celluloid: https://flathub.org/apps/details/io.github.celluloid_player.Celluloid
+                          "com.valvesoftware.Steam" # Steam: https://flathub.org/apps/details/com.valvesoftware.Steam
+                          "com.jetbrains.IntelliJ-IDEA-Community" # IntelliJ: https://flathub.org/apps/details/com.jetbrains.IntelliJ-IDEA-Community
+                          "com.spotify.Client" # Spotify: https://flathub.org/apps/details/com.spotify.Client
+                          "com.skype.Client" # Skype: https://flathub.org/apps/details/com.skype.Client
+                          "io.dbeaver.DBeaverCommunity" # DBeaverCommunity: https://flathub.org/apps/details/io.dbeaver.DBeaverCommunity
+                          "com.visualstudio.code" # Visual Studio Code: https://flathub.org/apps/details/com.visualstudio.code
+                          "com.gigitux.gtkwhats" # whatsapp: https://github.com/gigitux/gtkwhats
+                          "org.telegram.desktop" # telegram: https://flathub.org/apps/details/org.telegram.desktop
+                          "com.slack.Slack" # Slack: https://flathub.org/apps/details/com.slack.Slack
+                          "com.discordapp.Discord" # Discord: https://flathub.org/apps/details/com.discordapp.Discord
+                          "org.inkscape.Inkscape" # Inkscape: https://flathub.org/apps/details/org.inkscape.Inkscape
+                          "org.filezillaproject.Filezilla" # https://flathub.org/apps/details/org.filezillaproject.Filezilla
+                          "com.getpostman.Postman" # Postman: https://flathub.org/apps/details/com.getpostman.Postman
+                          "org.videolan.VLC" # VLC: https://flathub.org/apps/details/org.videolan.VLC
+                          "com.github.unrud.VideoDownloader" # VideoDownloader: https://flathub.org/apps/details/com.github.unrud.VideoDownloader
                           )
 
 echo "-----------------------------------------------------------------------------------------"
