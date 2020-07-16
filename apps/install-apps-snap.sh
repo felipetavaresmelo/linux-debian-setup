@@ -3,7 +3,6 @@ pass=$1
 log=$2
 declare -a apps_snap=(
                       "freemind" 
-                      "postgresql10" 
                       )
 echo "------------------------------------------------------------" | tee -a $log
 echo "> SNAP List"

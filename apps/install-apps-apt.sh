@@ -2,27 +2,34 @@
 pass=$1
 log=$2
 
-declare -a apps=("openjdk-8-jre-headless -y" # Compilador Java
+declare -a apps=("openjdk-8-jdk" # Compilador Java https://openjdk.java.net/install/
+                "openjdk-8-jdk-headless" # Compilador Java https://openjdk.java.net/install/
+                "openjdk-8-jre" # Compilador Java https://openjdk.java.net/install/
+                "openjdk-8-jre-headless" # Compilador Java https://openjdk.java.net/install/
                 "python3" # Interpretador Python
                 "python3-pip" # Python Package Index https://pypi.org/
                 "ruby-full" # Linguagem Ruby  https://www.ruby-lang.org/pt/documentation/installation/#apt
+                "nodejs" # https://github.com/nodesource/distributions/blob/master/README.md#installation-instructions
                 "build-essential" # essencial para a construção de pacotes Debian https://packages.debian.org/pt-br/sid/build-essential
                 "zlib1g-dev" # lossless data-compression library http://zlib.net/  https://packages.ubuntu.com/focal/zlib1g-dev
                 "synaptic" # gerenciamento de pacotes APT em GTK+ https://www.nongnu.org/synaptic/
-                "git" # git (https://git-scm.com/download/linux)
-                "google-chrome-stable" # Google Chrome estável
-                "mongodb-org -y" 
-                "postgresql postgresql-contrib -y" 
+                "git" # Git (https://git-scm.com/download/linux)
+                "mongodb-org" 
+                "postgresql" # PostgreSQL: https://www.postgresql.org/download/linux/ubuntu/
+                "pgadmin4" # PostgreSQL Graphical administration utility: https://www.pgadmin.org/download/pgadmin-4-apt/
+                "postgresql-contrib" # PostgreSQL supplied modules: https://www.postgresql.org/download/linux/ubuntu/
                 "apt-transport-https" # Https download transport for APT. https://packages.debian.org/jessie/apt-transport-https
                 "curl" # transferring data with URLs https://curl.haxx.se/
                 "wget" # Baixar arquivos atraves do HTTP, HTTPS, FTP ou FTPS https://www.gnu.org/software/wget/
                 "ca-certificates" # autenticidade das conexões SSL https://packages.debian.org/pt-br/sid/ca-certificates
                 "xclip" # Copy/Paste Command's  https://github.com/astrand/xclip
                 "solaar" # https://pwr-solaar.github.io/Solaar/
-                "lsb -y" # http://download.ebz.epson.net/dsc/du/02/DriverDownloadInfo.do?LG2=EN&CN2=&DSCMI=111235&DSCCHK=fb74fba5064100c62ec5321e3b763b68223dc521
-                "virtualbox -y" # Máquina virtual 
+                "lsb" # http://download.ebz.epson.net/dsc/du/02/DriverDownloadInfo.do?LG2=EN&CN2=&DSCMI=111235&DSCCHK=fb74fba5064100c62ec5321e3b763b68223dc521
+                "virtualbox" # Máquina virtual 
                 "alacarte" # Main menu: https://gitlab.gnome.org/GNOME/alacarte
                 "vivaldi-stable"
+                "google-chrome-stable" # Google Chrome estável 
+
                 )
 
 echo "------------------------------------------------------------" | tee -a $log
@@ -55,8 +62,8 @@ echo "$(date '+%Y/%m/%d-%H:%M:%S:%N') -- INFO -- APT -- repositório Vivaldi lis
 echo "deb http://ppa.launchpad.net/solaar-unifying/stable/ubuntu focal main" | sudo tee /etc/apt/sources.list.d/solaar-unifying.list
 echo "$(date '+%Y/%m/%d-%H:%M:%S:%N') -- INFO -- APT -- repositório Unifying listado." | tee -a $log
 
-echo "deb http://ppa.launchpad.net/solaar-unifying/stable/ubuntu focal main" | sudo tee /etc/apt/sources.list.d/solaar-unifying.list
-echo "$(date '+%Y/%m/%d-%H:%M:%S:%N') -- INFO -- APT -- repositório Unifying listado." | tee -a $log
+# Node.js
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 
 
 # Instalações APT
