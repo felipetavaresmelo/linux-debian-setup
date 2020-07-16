@@ -1,7 +1,7 @@
 #!/bin/bash
 pass=$1
 log=$2
-declare -a apps_snap=(
+declare -a apps=(
                       "freemind" 
                       )
 echo "------------------------------------------------------------" | tee -a $log
@@ -14,7 +14,7 @@ echo "------------------------------------------------------------" | tee -a $lo
 echo "> Starting to install apps with SNAP"
 echo "$(date '+%Y/%m/%d-%H:%M:%S:%N') -- INFO -- Starting to install apps with SNAP" >> $log
 
-for app in "${apps_snap[@]}"
+for app in "${apps[@]}"
 do
     echo "------------------------------------------------------------" | tee -a $log
     echo "$(date '+%Y/%m/%d-%H:%M:%S:%N') -- INFO -- snap -- Running: sudo -S snap install $app -V" >> $log
