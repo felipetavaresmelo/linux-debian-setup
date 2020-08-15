@@ -21,10 +21,12 @@ declare -a apps=(
     # Coder Tools
         "com.jetbrains.IntelliJ-IDEA-Community" # IntelliJ: https://flathub.org/apps/details/com.jetbrains.IntelliJ-IDEA-Community
         "com.visualstudio.code" # Visual Studio Code: https://flathub.org/apps/details/com.visualstudio.code
+        "com.google.AndroidStudio" # Android Studio: https://flathub.org/apps/details/com.google.AndroidStudio
     # Tester Tools
         "com.getpostman.Postman" # Postman: https://flathub.org/apps/details/com.getpostman.Postman
     # Data Base Tools
         "io.dbeaver.DBeaverCommunity" # DBeaverCommunity: https://flathub.org/apps/details/io.dbeaver.DBeaverCommunity
+        "com.jgraph.drawio.desktop" # draw.io: https://flathub.org/apps/details/com.jgraph.drawio.desktop
     # Network
         "org.filezillaproject.Filezilla" # https://flathub.org/apps/details/org.filezillaproject.Filezilla
     # Games

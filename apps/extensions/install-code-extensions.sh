@@ -10,6 +10,7 @@ declare -a extensions=("dracula-theme.theme-dracula"
                            "eamodio.gitlens"
                            "GitHub.vscode-pull-request-github"
                            "rogalmic.bash-debug"
+                           "ritwickdey.liveserver"
                         )
 
 echo "------------------------------------------------------------" | tee -a $log

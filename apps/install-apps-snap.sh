@@ -3,6 +3,7 @@ pass=$1
 log=$2
 declare -a apps=(
                       "freemind" 
+                      "mysql-workbench-community" # https://snapcraft.io/mysql-workbench-community
                       )
 echo "------------------------------------------------------------" | tee -a $log
 echo "> SNAP List"

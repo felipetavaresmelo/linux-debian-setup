@@ -14,6 +14,15 @@ declare -a apps=(
         "lsb" # Epson driver: http://download.ebz.epson.net/dsc/du/02/DriverDownloadInfo.do?LG2=EN&CN2=&DSCMI=111235&DSCCHK=fb74fba5064100c62ec5321e3b763b68223dc521
         "xclip" # Copy/Paste Command's  https://github.com/astrand/xclip
         "alacarte" # Main menu manager: https://gitlab.gnome.org/GNOME/alacarte
+    # Android Studio
+        "libc6:i386" # GNU C Library: Shared libraries: https://packages.ubuntu.com/focal/libc6
+        "libncurses5:i386" # shared libraries for terminal handling (legacy version): https://packages.ubuntu.com/focal/libncurses5
+        "libstdc++6:i386" # GNU Standard C++ Library v3: https://packages.ubuntu.com/focal/libstdc++6
+        "lib32stdc++6" # GNU Standard C++ Library v3 (32 bit Version): https://packages.ubuntu.com/focal/lib32stdc++6
+        "lib32z1" # compression library - 32 bit runtime: https://packages.ubuntu.com/focal/lib32z1
+        "libbz2-1.0:i386" # high-quality block-sorting file compressor library - runtime: https://packages.ubuntu.com/focal/libbz2-1.0
+    # Remote Access
+        "putty" # https://sempreupdate.com.br/como-instalar-o-putty-no-ubuntu-um-cliente-telnet-e-ssh/
     # Compiler | Interpreter
         "openjdk-8-jdk" # Compilador Java https://openjdk.java.net/install/
         "openjdk-8-jdk-headless" # Compilador Java https://openjdk.java.net/install/
@@ -23,17 +32,28 @@ declare -a apps=(
         "python3-pip" # Python Package Index https://pypi.org/
         "ruby-full" # Linguagem Ruby  https://www.ruby-lang.org/pt/documentation/installation/#apt
         "nodejs" # https://github.com/nodesource/distributions/blob/master/README.md#installation-instructions
+        "gcc-multilib" # GNU C compiler: https://packages.ubuntu.com/focal/gcc-multilib
     # Data Bases & Tools
         "mongodb-org" # Mongo DB: 
+        "mysql-server" # https://packages.ubuntu.com/focal/mysql-server
+        "mysql-client" # https://packages.ubuntu.com/focal/mysql-client
         "postgresql" # PostgreSQL: https://www.postgresql.org/download/linux/ubuntu/
         "postgresql-contrib" # PostgreSQL supplied modules: https://www.postgresql.org/download/linux/ubuntu/
         "pgadmin4" # PostgreSQL Graphical administration utility: https://www.pgadmin.org/download/pgadmin-4-apt/
+        "dia" # http://wiki.ubuntu-br.org/Dia
     # Package Manager
         "synaptic" # gerenciamento de pacotes APT em GTK+ https://www.nongnu.org/synaptic/
     # Version Control
         "git" # Git (https://git-scm.com/download/linux)
     # Virtual Machines Tools
+        "cpu-checker" #  https://packages.ubuntu.com/focal/cpu-checker
         "virtualbox" # Virtual Box 
+        "qemu-kvm" # QEMU Full virtualization on x86 hardware: https://packages.ubuntu.com/focal/qemu-kvm
+        "libvirt-bin" # toolkit to manage virtualization platforms: https://packages.ubuntu.com/bionic/libvirt-bin
+        "ubuntu-vm-builder" # Ubuntu VM builder: https://packages.ubuntu.com/bionic/ubuntu-vm-builder
+        "bridge-utils" # Utilities for configuring the Linux Ethernet bridge https://packages.ubuntu.com/focal/bridge-utils
+        "ia32-libs-multiarch" #
+        "virt-manager" # desktop application for managing virtual machines https://packages.ubuntu.com/focal/virt-manager
     # Internet
         "vivaldi-stable"
         "google-chrome-stable" # Google Chrome estável 
@@ -71,6 +91,12 @@ echo "$(date '+%Y/%m/%d-%H:%M:%S:%N') -- INFO -- APT -- repositório Unifying li
 
 # Node.js
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+echo "$(date '+%Y/%m/%d-%H:%M:%S:%N') -- INFO -- APT -- repositório yarn listado." | tee -a $log
+
+
 
 
 # Instalações APT
