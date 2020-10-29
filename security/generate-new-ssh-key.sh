@@ -1,6 +1,4 @@
-#!/usr/bin/env bash
-
-pass=$1
+#!/bin/sh
 
 # Creates a new ssh key
 # ssh-keygen -t rsa -b 4096 -C "your_email@example.com"

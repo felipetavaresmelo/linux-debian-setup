@@ -1,0 +1,120 @@
+------------------------------------------------------------
+2020/10/23-01:44:10:260540961 -- INFO -- snap list
+------------------------------------------------------------
+Name                 Version             Name                 Version             Rev    Tracking         Publisher   Notes
+canonical-livepatch  9.5.5               95     latest/stable    canonical*  -
+core                 16-2.47.1        Rev    Tracking         Publisher   Notes
+canonical-livepatch  9.5.5               95     latest/stable    canonical*  -
+core                 16-2.47.1           10185  latest/stable    canonical*  core
+core18               20200724            1885   latest/stable    canonical*  base
+gnome-3-34-1804      0+git.3556cb3       60     latest/stable/…  canonical*  -   10185  latest/stable    canonical*  core
+core18               20200724            1885   latest/stable    canonical*  base
+gnome-3-34-1804      0+git.3556cb3       60     latest/stable/…  canonical*  -
+gtk-common-themes    0.1-36-gc75f853
+gtk-common-themes    0.1-36-gc75f853     1506   latest/stable/…  canonical*  -
+snap-store           3.36.0-82-g80486d0  481    latest/stable/…  canonical*  -
+snapd                2.47.1              9721   latest/stable    canonical*  snapd
+     1506   latest/stable/…  canonical*  -
+snap-store           3.36.0-82-g80486d0  481    latest/stable/…  canonical*  -
+snapd                2.47.1              9721   latest/stable    canonical*  snapd
+------------------------------------------------------------
+2020/10/23-01:44:10:518338906 -- INFO -- Starting to install apps with SNAP
+------------------------------------------------------------
+2020/10/23-01:44:10:521793476 -- INFO -- snap -- Running: sudo -S snap install freemind -V
+freemind 1.1.0-Beta-2 from Jean-Baptiste Lallement (jibel) installed
+2020/10/23-01:44:37:519380310 -- INFO -- snap -- Finished installation of freemind
+------------------------------------------------------------
+2020/10/23-01:44:37:522741946 -- INFO -- snap -- Running: sudo -S snap install mysql-workbench-community -V
+mysql-workbench-community 8.0.21 from Tonin Bolzan (tonybolzan) installed
+2020/10/23-01:48:53:531957609 -- INFO -- snap -- Finished installation of mysql-workbench-community
+------------------------------------------------------------
+2020/10/23-01:48:53:535343353 -- INFO -- snap list
+------------------------------------------------------------
+NameName                       Version                     Rev    Tracking         Publisher   Notes
+canonical-livepatch        9.5.5                       95     latest/stable    canonical*  -
+core                       16-2.47.1                   10185  latest/stable    canonical*  core
+core18                     20200724                    1885   latest/stable    canonical*  base
+freemind                   1.1.0-Beta-2                4      latest/stable    jibel       -
+gnome-3-28-1804            3.28.0-19-g98f9e67.98f9e67  145    latest/stable    canonical*  -
+gnome-3-34-1804            0+git.3556cb3               60     latest/stable/…  canonical*  -
+gtk-common-themes          0.1-36-gc75f853             1506   latest/stable/…  canonical*  -
+mysql-workbench-community  8.0.21                      6      latest/stable    tonybolzan  -
+snap-store                 3.36.0-82-g80486d0          481    latest/stable/…  canonical*  -
+snapd                      2.47.1                                             Version                     Rev    Tracking         Publisher   Notes
+canonical-livepatch        9.5.5                       95     latest/stable    canonical*9721   latest/stable    canonical*  snapd
+  -
+core                       16-2.47.1                   10185  latest/stable    canonical*  core
+core18                     20200724                    1885   latest/stable    canonical*  base
+freemind                   1.1.0-Beta-2                4      latest/stable    jibel       -
+gnome-3-28-1804            3.28.0-19-g98f9e67.98f9e67  145    latest/stable    canonical*  -
+gnome-3-34-1804            0+git.3556cb3               60     latest/stable/…  canonical*  -
+gtk-common-themes          0.1-36-gc75f853             1506   latest/stable/…  canonical*  -
+mysql-workbench-community  8.0.21                      6      latest/stable    tonybolzan  -
+snap-store                 3.36.0-82-g80486d0          481    latest/stable/…  canonical*  -
+snapd                      2.47.1                      9721   latest/stable    canonical*  snapd
+------------------------------------------------------------
+------------------------------------------------------------
+2020/10/23-09:34:00:784871509 -- INFO -- snap list
+------------------------------------------------------------
+NameName                       Version                     Rev    Tracking         Publisher   Notes
+canonical-livepatch        9.5.5                       95     latest/stable    canonical*                       Version                     Rev    Tracking         Publisher   Notes
+canonical-livepatch        9.5.5                       95     latest/stable    canonical*  -
+core                       16-2.47.1  -
+core                       16-2.47.1                   10185  latest/stable    canonical*  core
+core18                     20200724                                       1885   latest/stable    10185  latest/stable    canonical*  core
+core18                     20200724                    1885   latest/stable    canonical*  base
+freemind                   1.1.0-Beta-2                canonical*  base
+freemind                   1.1.0-Beta-2                4      latest/stable    jibel       -4      latest/stable    jibel       -
+gnome-3-28-1804            3.28.0-19-g98f9e67.98f9e67
+gnome-3-28-1804            3.28.0-19-g98f9e67.98f9e67  145    latest/stable    canonical*  145    latest/stable    canonical*  -
+gnome-3-34-1804            0+git.3556cb3  -
+gnome-3-34-1804            0+git.3556cb3               60     latest/stable/…               60     latest/stable/…  canonical*  -
+gtk-common-themes          canonical*  -
+gtk-common-themes          0.1-36-gc75f853             1506     0.1-36-gc75f853             1506   latest/stable/…  canonical*  -
+mysql-workbench-communitylatest/stable/…  canonical*  -
+mysql-workbench-community  8.0.21                      6      latest/stable    tonybolzan  -
+snap-store                 3.36.0-82-g80486d0          8.0.21                      6        481    latest/stable/…  canonical*  -
+snapd                      2.47.1latest/stable    tonybolzan  -
+snap-store                 3.36.0-82-g80486d0          481    latest/stable/…                      9721   latest/stable    canonical*  snapd
+  canonical*  -
+snapd                      2.47.1                      9721   latest/stable    canonical*  snapd
+------------------------------------------------------------
+2020/10/23-09:34:00:827981794 -- INFO -- Starting to install apps with SNAP
+------------------------------------------------------------
+2020/10/23-09:34:00:829992235 -- INFO -- snap -- Running: sudo -S snap install freemind -V
+2020/10/23-09:34:00:895950917 -- INFO -- snap -- Finished installation of freemind
+------------------------------------------------------------
+2020/10/23-09:34:00:898629668 -- INFO -- snap -- Running: sudo -S snap install mysql-workbench-community -V
+2020/10/23-09:34:00:933280092 -- INFO -- snap -- Finished installation of mysql-workbench-community
+------------------------------------------------------------
+2020/10/23-09:34:00:935934652 -- INFO -- snap -- Running: sudo -S snap install code --classic -V
+code d2e414d9 from Visual Studio Code (vscode*) installed
+2020/10/23-09:34:22:493083500 -- INFO -- snap -- Finished installation of code --classic
+------------------------------------------------------------
+2020/10/23-09:34:22:496957141 -- INFO -- snap list
+------------------------------------------------------------
+NameName                       Version                     Rev    Tracking         Publisher   Notes
+canonical-livepatch        9.5.5                       95     latest/stable    canonical*  -
+code                       d2e414d9                    48                            Version                     Rev    Tracking         Publisher   Notes
+canonical-livepatch        9.5.5                       95     latest/stable    canonical*  -
+code                       d2e414d9                    48     latest/stable    vscode*     classic
+core                       16-2.47.1                   10185  latest/stable    canonical*  core
+core18                     20200724                    latest/stable    vscode*     classic
+core                       16-2.47.1                   10185  latest/stable    canonical*  core
+core18                     20200724                    1885   latest/stable    canonical*  base
+freemind                   1.1.0-Beta-2                4      latest/stable    jibel       -
+gnome-3-28-1804            3.28.0-19-g98f9e67.98f9e67  145    latest/stable    canonical*  -
+gnome-3-34-1804            0+git.3556cb3               60     latest/stable/…  canonical*  -
+gtk-common-themes          0.1-36-gc75f853             1506   latest/stable/…  canonical*  -
+mysql-workbench-community  8.0.21                      6      latest/stable    tonybolzan  -
+snap-store                 3.36.0-82-g80486d0          481    latest/stable/…  canonical*  -
+snapd                      2.47.1                      9721   latest/stable    canonical*1885   latest/stable    canonical*  base
+freemind                   1.1.0-Beta-2                4      latest/stable    jibel       -
+gnome-3-28-1804            3.28.0-19-g98f9e67.98f9e67  145    latest/stable    canonical*  -
+gnome-3-34-1804            0+git.3556cb3               60     latest/stable/…  canonical*  -
+gtk-common-themes          0.1-36-gc75f853             1506   latest/stable/…  canonical*  -
+mysql-workbench-community  8.0.21                      6      latest/stable    tonybolzan  -
+snap-store                 3.36.0-82-g80486d0          481    latest/stable/…  canonical*    snapd
+-
+snapd                      2.47.1                      9721   latest/stable    canonical*  snapd
+------------------------------------------------------------
