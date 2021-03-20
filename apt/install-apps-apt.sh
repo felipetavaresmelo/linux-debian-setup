@@ -51,7 +51,7 @@ declare -a apps=(
         "virt-manager" # desktop application for managing virtual machines https://packages.ubuntu.com/focal/virt-manager
     # Internet
         "vivaldi-stable"
-        "google-chrome-stable" # Google Chrome estável 
+        "google-chrome-stable" # Google Chrome estável
         )
 
 echo "------------------------------------------------------------" | tee -a $log
