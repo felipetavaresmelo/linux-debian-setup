@@ -5,7 +5,6 @@ declare -a apps=(
                       "freemind" # https://snapcraft.io/freemind
                       "mysql-workbench-community" # https://snapcraft.io/mysql-workbench-community
                       "code --classic" # https://snapcraft.io/code
-                      "node --classic --channel=15/stable" # https://snapcraft.io/node | https://github.com/nodesource/distributions/blob/master/README.md#snapinstall
                       )
 echo "------------------------------------------------------------" | tee -a $log
 echo "> SNAP List"
