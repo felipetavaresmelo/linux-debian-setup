@@ -1,6 +1,5 @@
 #!/bin/bash
-pass=$1
-log=$2
+log=$1
 
 declare -a python_libs=("beautifulsoup4"
                         "Flask"
