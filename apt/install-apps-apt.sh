@@ -6,10 +6,10 @@ declare -a apps=(
         "zlib1g-dev" # lossless data-compression library http://zlib.net/  https://packages.ubuntu.com/focal/zlib1g-dev
         "apt-transport-https" # Https download transport for APT. https://packages.debian.org/jessie/apt-transport-https
         "curl" # transferring data with URLs https://curl.haxx.se/
-        "solaar" # Logitech devices: https://pwr-solaar.github.io/Solaar/
+        # "solaar" # Logitech devices: https://pwr-solaar.github.io/Solaar/
         "ca-certificates" # Autenticidade das conexões SSL: https://packages.debian.org/pt-br/sid/ca-certificates
         "xclip" # Copy/Paste Command's  https://github.com/astrand/xclip
-        "alacarte" # Main menu manager: https://gitlab.gnome.org/GNOME/alacarte
+        # "alacarte" # Main menu manager: https://gitlab.gnome.org/GNOME/alacarte
     # Android Studio
         "libc6:i386" # GNU C Library: Shared libraries: https://packages.ubuntu.com/focal/libc6
         "libncurses5:i386" # shared libraries for terminal handling (legacy version): https://packages.ubuntu.com/focal/libncurses5
@@ -21,9 +21,9 @@ declare -a apps=(
         "putty" # https://sempreupdate.com.br/como-instalar-o-putty-no-ubuntu-um-cliente-telnet-e-ssh/
     # Compiler | Interpreter
         #"openjdk-8-jdk" # Compilador Java https://openjdk.java.net/install/
-        "openjdk-8-jdk-headless" # Compilador Java https://openjdk.java.net/install/
-        "openjdk-8-jre" # Compilador Java https://openjdk.java.net/install/
-        #"openjdk-8-jre-headless" # Compilador Java https://openjdk.java.net/install/
+        # "openjdk-8-jdk-headless" # Compilador Java https://openjdk.java.net/install/
+        # "openjdk-8-jre" # Compilador Java https://openjdk.java.net/install/
+        # "openjdk-8-jre-headless" # Compilador Java https://openjdk.java.net/install/
         "python3" # Interpretador Python
         "python3-pip" # Python Package Index https://pypi.org/
         "ruby-full" # Linguagem Ruby  https://www.ruby-lang.org/pt/documentation/installation/#apt
@@ -39,7 +39,7 @@ declare -a apps=(
     # Package Manager
         "synaptic" # gerenciamento de pacotes APT em GTK+ https://www.nongnu.org/synaptic/
     # Version Control
-        "git" # Git (https://git-scm.com/download/linux)
+        # "git" # Git (https://git-scm.com/download/linux)
     # Virtual Machines Tools
         "cpu-checker" #  https://packages.ubuntu.com/focal/cpu-checker
         "virtualbox" # Virtual Box 
