@@ -24,20 +24,20 @@ declare -a apps=(
         # "openjdk-8-jdk-headless" # Compilador Java https://openjdk.java.net/install/
         # "openjdk-8-jre" # Compilador Java https://openjdk.java.net/install/
         # "openjdk-8-jre-headless" # Compilador Java https://openjdk.java.net/install/
-        "python3" # Interpretador Python
-        "python3-pip" # Python Package Index https://pypi.org/
+        # "python3" # Interpretador Python
+        # "python3-pip" # Python Package Index https://pypi.org/
         "ruby-full" # Linguagem Ruby  https://www.ruby-lang.org/pt/documentation/installation/#apt
         "gcc-multilib" # GNU C compiler: https://packages.ubuntu.com/focal/gcc-multilib
     # Data Bases & Tools
-        "mongodb-org" # Mongo DB: https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/
-        "mysql-server" # https://packages.ubuntu.com/focal/mysql-server
-        "mysql-client" # https://packages.ubuntu.com/focal/mysql-client
-        "postgresql" # PostgreSQL: https://www.postgresql.org/download/linux/ubuntu/
-        "postgresql-contrib" # PostgreSQL supplied modules: https://www.postgresql.org/download/linux/ubuntu/
-        "pgadmin4" # PostgreSQL Graphical administration utility: https://www.pgadmin.org/download/pgadmin-4-apt/
-        "dia" # http://wiki.ubuntu-br.org/Dia
+        # "mongodb-org" # Mongo DB: https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/
+        # "mysql-server" # https://packages.ubuntu.com/focal/mysql-server
+        # "mysql-client" # https://packages.ubuntu.com/focal/mysql-client
+        # "postgresql" # PostgreSQL: https://www.postgresql.org/download/linux/ubuntu/
+        # "postgresql-contrib" # PostgreSQL supplied modules: https://www.postgresql.org/download/linux/ubuntu/
+        # "pgadmin4" # PostgreSQL Graphical administration utility: https://www.pgadmin.org/download/pgadmin-4-apt/
+        # "dia" # http://wiki.ubuntu-br.org/Dia
     # Package Manager
-        "synaptic" # gerenciamento de pacotes APT em GTK+ https://www.nongnu.org/synaptic/
+        # "synaptic" # gerenciamento de pacotes APT em GTK+ https://www.nongnu.org/synaptic/
     # Version Control
         # "git" # Git (https://git-scm.com/download/linux)
     # Virtual Machines Tools
@@ -50,8 +50,8 @@ declare -a apps=(
         "ia32-libs-multiarch" #
         "virt-manager" # desktop application for managing virtual machines https://packages.ubuntu.com/focal/virt-manager
     # Internet
-        "vivaldi-stable"
-        "google-chrome-stable" # Google Chrome estável
+        # "vivaldi-stable"
+        # "google-chrome-stable" # Google Chrome estável
         )
 
 echo "------------------------------------------------------------" | tee -a $log
