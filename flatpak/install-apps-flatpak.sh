@@ -5,7 +5,7 @@ log=$2
 declare -a apps=(
     # Communications
         "com.gigitux.gtkwhats" # whatsapp: https://github.com/gigitux/gtkwhats
-        "org.telegram.desktop" # telegram: https://flathub.org/apps/details/org.telegram.desktop
+        # "org.telegram.desktop" # telegram: https://flathub.org/apps/details/org.telegram.desktop
         "com.slack.Slack" # Slack: https://flathub.org/apps/details/com.slack.Slack
         "com.discordapp.Discord" # Discord: https://flathub.org/apps/details/com.discordapp.Discord
         "com.skype.Client" # Skype: https://flathub.org/apps/details/com.skype.Client
