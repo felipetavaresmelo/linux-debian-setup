@@ -4,16 +4,16 @@ log=$2
 
 declare -a apps=(
     # Communications
-        "com.gigitux.gtkwhats" # whatsapp: https://github.com/gigitux/gtkwhats
+        # "com.gigitux.gtkwhats" # whatsapp: https://github.com/gigitux/gtkwhats
         # "org.telegram.desktop" # telegram: https://flathub.org/apps/details/org.telegram.desktop
-        "com.slack.Slack" # Slack: https://flathub.org/apps/details/com.slack.Slack
-        "com.discordapp.Discord" # Discord: https://flathub.org/apps/details/com.discordapp.Discord
-        "com.skype.Client" # Skype: https://flathub.org/apps/details/com.skype.Client
+        # "com.slack.Slack" # Slack: https://flathub.org/apps/details/com.slack.Slack
+        # "com.discordapp.Discord" # Discord: https://flathub.org/apps/details/com.discordapp.Discord
+        # "com.skype.Client" # Skype: https://flathub.org/apps/details/com.skype.Client
     # Media
-        "org.gimp.GIMP" # GIMP: https://flathub.org/apps/details/org.gimp.GIMP
-        "org.inkscape.Inkscape" # Inkscape: https://flathub.org/apps/details/org.inkscape.Inkscape
-        "io.github.celluloid_player.Celluloid"  # Celluloid: https://flathub.org/apps/details/io.github.celluloid_player.Celluloid
-        "org.videolan.VLC" # VLC: https://flathub.org/apps/details/org.videolan.VLC
+        # "org.gimp.GIMP" # GIMP: https://flathub.org/apps/details/org.gimp.GIMP
+        # "org.inkscape.Inkscape" # Inkscape: https://flathub.org/apps/details/org.inkscape.Inkscape
+        # "io.github.celluloid_player.Celluloid"  # Celluloid: https://flathub.org/apps/details/io.github.celluloid_player.Celluloid
+        # "org.videolan.VLC" # VLC: https://flathub.org/apps/details/org.videolan.VLC
     # Streaming
         "com.obsproject.Studio" # OBS Studio: https://flathub.org/apps/details/com.obsproject.Studio
         "com.spotify.Client" # Spotify: https://flathub.org/apps/details/com.spotify.Client
