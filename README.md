@@ -1,2 +1,2 @@
 # setup-ubuntu
-Scripts de setup do pc Ubuntu
+Scripts de setup de softwares do pc Ubuntu
