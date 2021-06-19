@@ -16,7 +16,7 @@ sudo apt-get install flatpak  -y -V
 
 echo ">>>> Executando: sudo apt install gnome-software-plugin-flatpak -V"
 echo "$(date '+%Y/%m/%d-%H:%M:%S:%N') -- INFO -- apt -- Executando: sudo apt install gnome-software-plugin-flatpak -V" >> $log
-sudo apt install gnome-software-plugin-flatpak -V
+sudo apt install gnome-software-plugin-flatpak -y -V
 
 echo ">>>> Executando: flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo"
 echo "$(date '+%Y/%m/%d-%H:%M:%S:%N') -- INFO -- apt -- Executando: flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo" >> $log_flatpak

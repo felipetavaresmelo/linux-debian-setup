@@ -1,7 +1,7 @@
 #!/bin/sh
 
-sudo apt install zsh
-chsh -s /bin/zsh
+sudo apt install zsh -y
+sudo chsh -s /bin/zsh
 
 sudo apt install git -y
 
