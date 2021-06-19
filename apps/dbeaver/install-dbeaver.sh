@@ -1,3 +1,3 @@
 #!/bin/sh
 
-sudo flatpak install io.dbeaver.DBeaverCommunity -y
+sudo snap install dbeaver-ce
