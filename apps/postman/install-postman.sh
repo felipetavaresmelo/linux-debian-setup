@@ -1,3 +1,3 @@
 #!/bin/sh
 
-sudo flatpak install com.getpostman.Postman -y
+sudo snap install postman

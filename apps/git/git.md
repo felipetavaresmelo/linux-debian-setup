@@ -2,8 +2,8 @@
 ## Configurações globais
 
 ```sh
-git config --global user.email "felipetavaresmelo@gmail.com"
 git config --global user.name "Felipe Tavares de Melo"
+git config --global user.email "felipetavaresmelo@gmail.com"
 ```
 
 ## …or create a new repository on the command line
