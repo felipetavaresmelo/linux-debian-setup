@@ -1,3 +1,3 @@
 #!/bin/sh
 
-sudo flatpak install org.videolan.VLC -y
+sudo snap install vlc

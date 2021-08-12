@@ -1,3 +1,3 @@
 #!/bin/sh
 
-sudo flatpak install org.inkscape.Inkscape -y
+sudo snap install inkscape
