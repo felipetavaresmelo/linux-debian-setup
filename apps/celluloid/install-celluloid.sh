@@ -1,3 +1,3 @@
 #!/bin/sh
 
-sudo flatpak install io.github.celluloid_player.Celluloid -y
+sudo flatpak install flathub io.github.celluloid_player.Celluloid
