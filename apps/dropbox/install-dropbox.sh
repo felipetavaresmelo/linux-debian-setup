@@ -1,3 +1,3 @@
 #!/bin/sh
 
-flatpak install flathub com.dropbox.Client
+flatpak install flathub com.dropbox.Client -y
