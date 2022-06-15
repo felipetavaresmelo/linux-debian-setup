@@ -3,32 +3,41 @@
 # Solicitar elevação de usuário root
 sudo -i
 
-HOME=/home/$SUDO_USER
-
 cd $HOME
 
-# variaveis temporarias
-APPS=$HOME/setup/apps
-EXTENSIONS=$HOME/setup/extensions
-FONTS=$HOME/setup/fonts
+# declaração de variaveis de ambiente
+APPS=$HOME/apps
+EXTENSIONS=$HOME/extensions
+FONTS=$HOME/fonts
 
-# variaveis do script
-LOG=$HOME/setup/setup-ubuntu.log
-REPOS=$HOME/git
+# declaracao de variaveis auxiliares para o script
+LOG_FOLDER=$HOME/setup-ubuntu
+LOG=$LOG_FOLDER/install-setup-ubuntu.log
 
-if [ ! -d "${REPOS}" ]; then
-    mkdir -p "$REPOS"
-    echo "$REPOS folder created." | tee -a $LOG
-else
-    echo "Found repositories folder in $REPOS" | tee -a $LOG
-fi
+function create_log() {
+    if [[ ! -e $LOG ]]; then
+        mkdir -p $LOG_FOLDER
+        touch $LOG
+        echo "$LOG file created." | tee -a $LOG
+    else
+        echo "$LOG already exists" | tee -a $LOG
+    fi
+}
 
-if [ ! -e "${LOG}" ]; then
-    mfdir $LOG
-    echo "$LOG file created." | tee -a $LOG
-else
-    echo "Found existing $LOG file." | tee -a $LOG
-fi;
+create_log
+
+function create_folder() {
+    if [[ ! -e $1 ]]; then
+        mkdir -p $1
+        echo "$1 folder created." | tee -a $LOG
+    elif [[ ! -d $1 ]]; then
+        echo "$1 already exists but is not a directory" | tee -a $LOG
+    fi
+}
+
+create_folder $APPS
+create_folder $EXTENSIONS
+create_folder $FONTS
 
 ### INSTALAÇÔES ###
 
