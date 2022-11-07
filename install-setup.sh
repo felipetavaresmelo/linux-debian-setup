@@ -43,33 +43,37 @@ create_folder $FONTS
 
 echo "$(date '+%Y/%m/%d-%H:%M:%S:%N') -- INFO -- Inicio das instalacoes." | tee -a $LOG
 
+# Atualizaçao do Ubuntu
+sudo apt-get update
+sudo apt-get dist-upgrade
+
 # Install APT-GET
 cd $APPS
-chmod +x install-apps-apt.sh
-./install-apps-apt.sh $LOG
+chmod +x ./pkg/install-apps-apt.sh
+./pkg/install-apps-apt.sh $LOG
 
 # install SNAP
 cd $APPS
-chmod +x install-apps-snap.sh
-./install-apps-snap.sh $LOG
+chmod +x ./pkg/install-apps-snap.sh
+./pkg/install-apps-snap.sh $LOG
 
 # Install Flatpack
 cd $APPS
-chmod +x install-apps-apt.sh
-./install-apps-apt.sh $LOG
+chmod +x ./pkg/install-apps-apt.sh
+./pkg/install-apps-apt.sh $LOG
 
 # Install Extensions
 cd $EXTENSIONS
-chmod +x install-code-extensions.sh
-./install-code-extensions.sh $LOG
+chmod +x ./pkg/install-code-extensions.sh
+./pkg/install-code-extensions.sh $LOG
 
-chmod +x install-terminal-dracula-theme.sh
-./install-terminal-dracula-theme.sh $LOG
+chmod +x ./pkg/install-terminal-dracula-theme.sh
+./pkg/install-terminal-dracula-theme.sh $LOG
 
 # Install Fonts
 cd $FONTS
-chmod +x install-fira-code-font.sh
-./install-fira-code-font.sh
+chmod +x ./pkg/install-fira-code-font.sh
+./pkg/install-fira-code-font.sh
 
 ### LOG ###
 

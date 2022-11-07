@@ -76,24 +76,28 @@ do
     echo "$(date '+%Y/%m/%d-%H:%M:%S:%N') -- INFO -- APT -- $app instalado com sucesso"  >> $log
 done
 
-# Resolver pacotes quebrados na instalação de muitos pacotes
-sudo apt-get --fix-broken install | tee -a $log
+## Resolver pacotes quebrados na instalação de muitos pacotes
+# sudo apt-get --fix-broken install | tee -a $log
 
-# Outra forma de corrigir a quebra de pacotes
-sudo apt-get clean | tee -a $log
-sudo apt-get install -f | tee -a $log
-sudo dpkg --configure -a | tee -a $log
-sudo apt-get update | tee -a $log
+## Outra forma de corrigir a quebra de pacotes
+# sudo apt-get install -f | tee -a $log
+# sudo dpkg --configure -a | tee -a $log
+# sudo apt-get update | tee -a $log
 
-# Resolver problemas com travamento do gerenciador de pacotes
-sudo rm /var/lib/apt/lists/* -vf | tee -a $log
-sudo apt-get update | tee -a $log
+## Resolver problemas com travamento do gerenciador de pacotes
+# sudo rm /var/lib/apt/lists/* -vf | tee -a $log
+# sudo apt-get update | tee -a $log
 
-# Resolver comflitos
-sudo apt-get clean | tee -a $log
-sudo apt-get autoclean | tee -a $log
-sudo apt-get autoremove | tee -a $log
+## Limpar pacotes e dependencias antigas baixadas através de outras dependencias.
+## Cuidado, pode excluir dependenicas importantes.  
+# sudo apt-get autoremove | tee -a $log
+# sudo apt-get autoclean | tee -a $log
+# sudo apt-get clean | tee -a $log
 
-# Resolver depêndencia quebrada, em falta ou corrompida
-sudo dpkg --configure -a | tee -a $log
+## Resolver depêndencia quebrada, em falta ou corrompida
+# sudo dpkg --configure -a | tee -a $log
+# sudo apt-get update | tee -a $log
+
+
+## Atualizar pacotes
 sudo apt-get update | tee -a $log
