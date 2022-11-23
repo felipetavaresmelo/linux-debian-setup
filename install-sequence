@@ -1,0 +1,50 @@
+sudo apt-get update
+sudo apt-get dist-upgrade
+
+install flatpak
+
+install synaptic
+
+install essentials
+
+install java
+
+install maven
+
+install node
+
+intall angular/cli
+
+install yarn
+
+install vivaldi
+
+install git
+config git user
+generate ssh
+
+install github cli
+gh auth login
+
+install vscode
+
+install intellij
+
+install firacodeisco
+
+install telegram
+
+install whatisie
+
+install dropbox
+
+install gitflow
+	sudo apt-get install git-flow
+
+
+Registrar o ubuntu pro no site Ubuntu.com e vincular a instalação para abilitar o live patch
+sudo pro attach <hash>
+
+install discord
+install zoom
+

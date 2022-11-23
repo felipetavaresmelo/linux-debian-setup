@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "gvfs-mount-js": "^1.0.4"
+  }
+}
