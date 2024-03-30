@@ -2,8 +2,6 @@
 
 sudo apt-get update
 sudo apt-get dist-upgrade
-sudo apt autoremove
-
 
 wget -P $HOME/Downloads  https://download.oracle.com/otn/java/jdk/7u80-b15/jdk-7u80-linux-x64.tar.gz
 tar -xvzf $HOME/Downloads/jdk-7u80-linux-x64.tar.gz -C $HOME/apps
@@ -15,6 +13,9 @@ sudo apt-get install openjdk-11-jdk-headless -y -V
 
 sudo apt-get install openjdk-17-jdk-headless -y -V
 
+
+wget https://download.oracle.com/java/21/latest/jdk-21_linux-x64_bin.deb
+sudo dpkg -i jdk-21_linux-x64_bin.deb
 
 # sudo update-alternatives --config java
 
