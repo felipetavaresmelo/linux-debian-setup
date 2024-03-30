@@ -1,4 +1,4 @@
-# linux-deb-setup
+# linux-debian-setup
 
 Este reposítório tem a finalidade de reunir os principais softwares utilizados nas distribuições Debian o derivados através de scripts de instalação automatizados e customizáveis.
 
