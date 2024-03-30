@@ -4,7 +4,6 @@ log=$2
 
 sudo apt-get update
 sudo apt-get dist-upgrade
-sudo apt autoremove
 
 echo "-----------------------------------------------------------------------------------------"
 echo "Iniciando a instalação do FLATPAK e Plugin com o APT"
