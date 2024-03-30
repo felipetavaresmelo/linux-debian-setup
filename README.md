@@ -1,6 +1,6 @@
-# ubuntu-setup
+# linux-deb-setup
 
-Este reposítório tem a finalidade de reunir os principais softwares utilizados no Ubuntu em um script de instalação automatizado e customizável.
+Este reposítório tem a finalidade de reunir os principais softwares utilizados nas distribuições Debian o derivados através de scripts de instalação automatizados e customizáveis.
 
 # Setup
 

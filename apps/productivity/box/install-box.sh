@@ -10,6 +10,8 @@ wget https://github.com/alfredobonino/Box2Tux/archive/master.zip
 
 unzip master.zip
 
+rm master.zip
+
 cd Box2Tux-master/
 
 chmod +x box2tux

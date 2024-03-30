@@ -22,4 +22,5 @@ https://gnunn1.github.io/tilix-web/manual/
 
 1. Criar pasta `/home/.config/tilix/schemes/` e copiar o arquivo `argonaut.json` ou o theme desejado.
 2. No menu "amburguer" acessar: `Preferences > Profiles (default) > color > Color scheme` e escolher o theme instalado.
+
 ---

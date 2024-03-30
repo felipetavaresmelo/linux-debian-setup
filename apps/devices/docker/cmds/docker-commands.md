@@ -15,7 +15,7 @@ docker container ls -a`
 docker container run -d nginx
 ```
 
-## Criar em modo daemon com bind de porda do serviço 
+## Criar em modo daemon com bind de porta do serviço 
 ```sh
 docker container run -d -p 8080:80 nginx
 ```
