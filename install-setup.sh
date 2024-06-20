@@ -3,64 +3,75 @@
 # Solicitar elevação de usuário root
 sudo -i
 
-cd $HOME
-
 # declaração de variaveis de ambiente
-APPS=$HOME/apps
-EXTENSIONS=$HOME/extensions
-FONTS=$HOME/fonts
+HOME_USER=/home/$SUDO_USER
+
+cd $HOME_USER
+
+# PASTAS
+APPS_FOLDER=$HOME_USER/Apps
+EXTENSIONS_FOLDER=$HOME_USER/Extensions
+FONTS_FOLDER=$HOME_USER/Fonts
+SETUP_FOLDER=$HOME_USER/Setup
+SETUP_LOG_FOLDER=$SETUP_FOLDER/log
 
 # declaracao de variaveis auxiliares para o script
-LOG_FOLDER=$HOME/setup-ubuntu
-LOG=$LOG_FOLDER/install-setup-ubuntu.log
+SETUP_LOG=$SETUP_LOG_FOLDER/setup-install.log
 
 function create_log() {
-    if [[ ! -e $LOG ]]; then
-        mkdir -p $LOG_FOLDER
-        touch $LOG
-        echo "$LOG file created." | tee -a $LOG
+    if [[ ! -e $SETUP_LOG_FOLDER ]]; then
+        mkdir -p $SETUP_LOG_FOLDER
+        touch $SETUP_LOG
+        echo "$SETUP_LOG file created." | tee -a $SETUP_LOG
     else
-        echo "$LOG already exists" | tee -a $LOG
+        echo "$SETUP_LOG already exists" | tee -a $SETUP_LOG
     fi
 }
 
 create_log
 
+chmod 777 $SETUP_FOLDER
+chmod 777 $SETUP_LOG_FOLDER
+
 function create_folder() {
     if [[ ! -e $1 ]]; then
         mkdir -p $1
-        echo "$1 folder created." | tee -a $LOG
+        echo "$(date '+%Y/%m/%d-%H:%M:%S:%N') -- INFO -- Pasta " $1 " criada " | tee -a $SETUP_LOG
     elif [[ ! -d $1 ]]; then
-        echo "$1 already exists but is not a directory" | tee -a $LOG
+        echo "$(date '+%Y/%m/%d-%H:%M:%S:%N') -- INFO -- Pasta " $1 " já existe mas não é um diretório " | tee -a $SETUP_LOG
     fi
 }
 
-create_folder $APPS
-create_folder $EXTENSIONS
-create_folder $FONTS
+create_folder $APPS_FOLDER
+create_folder $EXTENSIONS_FOLDER
+create_folder $FONTS_FOLDER
 
-### INSTALAÇÔES ###
+chmod 777 $APPS_FOLDER
+chmod 777 $EXTENSIONS_FOLDER
+chmod 777 $FONTS_FOLDER
 
-echo "$(date '+%Y/%m/%d-%H:%M:%S:%N') -- INFO -- Inicio das instalacoes." | tee -a $LOG
+### INSTALAÇÕES ###
+
+echo "$(date '+%Y/%m/%d-%H:%M:%S:%N') -- INFO -- Inicio das instalacoes." | tee -a $SETUP_LOG
 
 # Atualizaçao do Ubuntu
-sudo apt-get update
-sudo apt-get dist-upgrade
+sudo apt-get update | tee -a $SETUP_LOG
+sudo apt-get dist-upgrade | tee -a $SETUP_LOG
 
 # Install APT-GET
 cd $APPS
-chmod +x ./pkg/install-apps-apt.sh
-./pkg/install-apps-apt.sh $LOG
+chmod +x ./pkg/install-apps-apt.sh | tee -a $SETUP_LOG
+./pkg/install-apps-apt.sh $SETUP_LOG
 
 # install SNAP
-cd $APPS
+cd $APPS | tee -a $SETUP_LOG
 chmod +x ./pkg/install-apps-snap.sh
-./pkg/install-apps-snap.sh $LOG
+./pkg/install-apps-snap.sh $SETUP_LOG
 
 # Install Flatpack
 cd $APPS
 chmod +x ./pkg/install-apps-apt.sh
-./pkg/install-apps-apt.sh $LOG
+./pkg/install-apps-apt.sh $SETUP_LOG
 
 # Install Extensions
 cd $EXTENSIONS
