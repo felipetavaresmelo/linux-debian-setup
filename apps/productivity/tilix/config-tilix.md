@@ -17,7 +17,7 @@ https://gnunn1.github.io/tilix-web/manual/
 - https://github.com/isacikgoz/gogh-to-tilix
 - https://github.com/protesilaos/tempus-themes
 - https://github.com/pablohenriq/snazzy-theme
-
+ 
 ### Instalação
 
 1. Criar pasta `/home/.config/tilix/schemes/` e copiar o arquivo `argonaut.json` ou o theme desejado.
